@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  * {
+    scroll-behavior: smooth;
+}
+  /* globals.css */
+  .swiper {
+    width: 100%!important;
+    height: 100vh!important;;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #smooth-wrapper {
+    overflow: hidden;
+  }
+
+  #smooth-content {
+    position: relative;
+  }
+
+  .hero-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/backgroundhome.svg);
+    background-position: bottom;
+  }
+  .glass-bg {
+    -webkit-box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+      -moz-box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+      box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    /* position: relative; */
+    z-index: 10;
+  }
+  .featureContainer{
+    position: relative;
+    margin-top: 100vh; /* Adjust to your preference */
+    margin-bottom: 100vh; /* Space below after the pinned section */
+  }
+  .datapoint-video {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  .tab-shadow {
+    box-shadow: 4px 4px 85px 0px rgba(24, 115, 172, 0.29);
+  }
+  .industry-section {
+    background: linear-gradient(77deg, #145994 13.5%, #003058 97.89%);
+    clip-path: polygon(0% 6.3%, 100% 0%, 100% 92.8%, 0% 100%);
+    background-size: cover;
+    padding-bottom: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .industry-card {
+    background: #fff;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 8px 15px 80px rgba(14, 72, 119, 0.2);
+  }
+  .counter-border:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #37c1f1, #37bdb0);
+  }
+  .counter-border:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #37c1f1, #37bdb0);
+  }
+  .footer-bg {
+    background: linear-gradient(84deg, #145994 3.28%, #003058 97.67%);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .testimonial-slider {
+    max-width: 80%;
+  }
+  .testimonial-content {
+    box-shadow: 8px 15px 80px rgba(14, 72, 119, 0.2);
+  }
+  .testimonial-writings {
+    background: linear-gradient(84deg, #115991 2.94%, #1873ac 96.29%);
+  }
+ 
+  @media only screen and (max-width: 768px) {
+    .industry-section {
+      background: #115991;
+    }
+  }
+  @media only screen and (max-width: 668px) {
+    .counter-border::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #37c1f1, #37bdb0);
+    }
+    .footer-bg {
+      background-color: #115991;
+    }
+    .testimonial-slider {
+      max-width: 100%;
+    }
+    .industry-section {
+      background: linear-gradient(77deg, #145994 13.5%, #003058 97.89%);
+      clip-path: none;
+      background-size: cover;
+      padding-bottom: 100px;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
+    .counter-border:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0px;
+      background: linear-gradient(to right, #37c1f1, #37bdb0);
+    }
+    .counter-border:nth-child(3)::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #37c1f1, #37bdb0);
+    }
+    .counter-circle {
+      height: 385px!important;
+      clip-path: ellipse(74% 78% at 45% 0)!important;
+  }
+  }
+  .industryCardAfter::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  .logo-ticker-image{
+    @apply h-16 w-auto
+  }
+  .solution-card:first-child {
+    @apply  md:border-r-2 border-[#115991]/20;
+  }
+  
+  .solution-card:nth-child(2) {
+    @apply md:border-r-2 border-[#115991]/20;
+  }
+  .counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+
+  .custom-counter{
+    background:#073D6B ;
+
+    }
+    .counter-circle{
+      position: absolute;
+      top: 0px;
+      left: -13px;
+      height: 231px;
+      width: 110%;
+      background: #164d79bb;
+      clip-path: ellipse(49% 70% at 45% 0%);
+
+    }
+    .custom-shadow{
+      -webkit-box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+      -moz-box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+      box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+    }
+    .cta-background{
+      background:url(../../public/assets/CTAbg.png)
+    }
+    .wrapper {
+      position: relative;
+      padding-top: 20vh; /* Push content below pinned area */
+      padding-bottom: 100vh; /* Ensure space after pinned area */
+    }
+}
+
+@layer components {
+  .btn {
+    @apply text-lg text-white border border-white px-5 py-2 rounded-lg font-bold transition-all duration-300 ease-in-out;
+  }
+  .btn:hover {
+    @apply border-white  scale-105;
+  }
+  .btn-primary {
+    @apply bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] border-0 transform transition-transform duration-300 ease-in-out;
+  }
+  .btn-orange{
+    @apply bg-gradient-to-r from-[#FF8336] to-[#FF7824] border-0 transform transition-transform duration-300 ease-in-out;
+
+  }
+  .btn-primary:hover {
+    @apply scale-105 bg-gradient-to-l from-[#37BDB0] to-[#37C1F1];
+  }
+  .btn-border {
+    @apply border  border-[#115991] text-[#115991] transition-colors duration-300 ease-in-out;
+  }
+  .btn-border:hover {
+    @apply border-[#37C1F1] text-[#37C1F1] scale-105;
+  }
+  .text-primary {
+    @apply text-center text-2xl md:text-4xl lg:text-4xl font-bold text-[#115991];
+  }
+  .text-card {
+    @apply text-xl font-bold text-[#115991];
+  }
+}
