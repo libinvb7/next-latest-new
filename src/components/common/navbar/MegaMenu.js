@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import menu from "../../../data/menu/menu";
-import IntegrateApp from "./IntegrateApp";
+import IntegrateApp from "./IntegrateApp"; 
 
 const MegaMenu = () => {
   const [isOpen, setIsOpen] = useState(null);
